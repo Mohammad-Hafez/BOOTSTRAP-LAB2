@@ -1,0 +1,68 @@
+:root {
+    --p-dark-color: #666;
+    --p-light-color: #999;
+    --black-light-color: #282828;
+
+}
+
+@font-face {
+    font-family: open sans;
+    src: url(../fonts/sans/OpenSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/poppins/Poppins-Medium.ttf);
+}
+
+#nav {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.433);
+}
+
+#nav i {
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#nav .navbar-collapse .navbar-nav .nav-item a {
+    color: white;
+    font-size: 1rem !important;
+}
+
+#nav .navbar-collapse .navbar-nav .nav-item a {
+    font-family: poppins;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+
+@media screen and (max-width:990px) {
+
+    #nav .container {
+        max-width: 100%;
+        margin: 0;
+        padding: 0 !important;
+    }
+
+    #nav .collapse .social-icons {
+        opacity: 0;
+    }
+
+    #nav .container .nav-logo,
+    #nav .container button {
+        margin-inline: 20px;
+    }
+
+    #nav .collapse {
+        background-color: white;
+        width: 100vw;
+        padding-inline: 20px;
+        margin-top: 20px;
+    }
+
+    #nav .container .collapse .navbar-nav .nav-item a {
+        color: black;
+    }
+
+}
